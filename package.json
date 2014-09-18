@@ -4,7 +4,7 @@
   "description": "connect-aerospike is a Aerospike session store backed.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
