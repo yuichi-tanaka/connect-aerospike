@@ -1,6 +1,6 @@
 {
   "name": "connect-aerospike",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "connect-aerospike is a Aerospike session store backed.",
   "main": "index.js",
   "scripts": {
