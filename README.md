@@ -12,9 +12,11 @@ $ npm install connect-aerospike
 
 ## Options
 
-* `prefix` an optional prefix for each key,in case you are sharing your Aerospike servers and namespace with something generating its own keys.
-* `hosts` Aerospike servers locations, can by array.
-* `ttl` Aerospike content TTL in seconds.
+* `ttl` Aerospike content TTL in seconds. (`Default: 86400`)
+* `hosts` Aerospike servers locations, can by array. (`Default: '127.0.0.1:3000'`)
+* `prefix` an optional prefix for each key,in case you are sharing your Aerospike servers and namespace with something generating its own keys. (`Default: 'sess:'`)
+* `ns` Aerospike namespace. (`Default: 'session'`)
+* `st` Aerospike set. (`Default: 'store'`)
 
 ## Usage
 
@@ -22,11 +24,13 @@ $ npm install connect-aerospike
 var session = require('express-session');
 var sessionStore = require('connect-aerospike')(session);
 app.use(session({
-  secret:'secret key'
-  store :new sessionStore({
+  secret: 'secret key'
+  store: new sessionStore({
     ttl: 86400
-    hosts:['127.0.0.1:3000'],
-    prefix:'sess:'
+    hosts: ['127.0.0.1:3000'],
+    prefix: 'sess_key:'
+    ns: 'mysession_ns',
+    st: 'mysession_st'
     }),
 }));
 ```
