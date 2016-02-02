@@ -30,7 +30,8 @@ app.use(session({
     hosts: ['127.0.0.1:3000'],
     prefix: 'sess_key:'
     ns: 'mysession_ns',
-    st: 'mysession_st'
-    }),
+    st: 'mysession_st',
+    timeout: 10
+  })
 }));
 ```
