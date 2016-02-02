@@ -17,6 +17,7 @@ $ npm install connect-aerospike
 * `prefix` an optional prefix for each key,in case you are sharing your Aerospike servers and namespace with something generating its own keys. (`Default: 'sess:'`)
 * `ns` Aerospike namespace. (`Default: 'session'`)
 * `st` Aerospike set. (`Default: 'store'`)
+* `timeout` maximum time in milliseconds to wait for the operation to complete. (`Default: 10`)
 
 ## Usage
 
