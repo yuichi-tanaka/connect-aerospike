@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/yuichi-tanaka/connect-aerospike",
   "dependencies": {
-    "aerospike": "^1.0.16",
-    "express-session": "^1.8.2"
+    "aerospike": "^2.6.0",
+    "express-session": "^1.15.3"
   }
 }
