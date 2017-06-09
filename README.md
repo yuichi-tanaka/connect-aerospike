@@ -1,6 +1,6 @@
 connect-aerospike
 =================
-connect-aerospike is a Aerospike session store backed by aerospike-client-nodejs.
+connect-aerospike is a Aerospike session store backed by [aerospike-client-nodejs](https://github.com/aerospike/aerospike-client-nodejs).
 
 ## Installation
 
