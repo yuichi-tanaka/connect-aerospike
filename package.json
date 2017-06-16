@@ -16,13 +16,19 @@
     "session"
   ],
   "author": "tanaka.y.p",
+  "contributors": [
+    "Ryuma Yoshida <yoshida-ryuma@dmm.com>"
+  ],
   "license": "Apache",
+  "engines": {
+    "node": ">= 0.10.32"
+  },
   "bugs": {
     "url": "https://github.com/yuichi-tanaka/connect-aerospike/issues"
   },
   "homepage": "https://github.com/yuichi-tanaka/connect-aerospike",
   "dependencies": {
-    "aerospike": "^1.0.16",
-    "express-session": "^1.8.2"
+    "aerospike": "^2.6.0",
+    "express-session": "^1.15.3"
   }
 }
